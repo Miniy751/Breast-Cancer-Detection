@@ -117,7 +117,13 @@ to specify the matrix soft features and Target variable
      - random_search.fit(x_train, y_train)
      - here we achieved the best_estimator, best_score and best params for our models..
      
-   ## Final model(Logistic Regression)
-     - Following the cross validation process, the accuracy increased from 97.81% to 98.24% while the Standard Deviation also increased from 1.98% to 2.16%.
+   ## Final model (Logistic Regression)
+     - Following the cross validation process, 
+     - the accuracy increased from 97.81% to 98.24% 
+     - while the Standard Deviation also increased from 1.98% to 2.16%.
+     
+  ## We then Predicted couple of single observations
+  
+  ## 
   
 
