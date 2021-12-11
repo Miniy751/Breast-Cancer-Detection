@@ -102,9 +102,9 @@ to specify the matrix soft features and Target variable
       - Random Forest: Accuracy=96.05 %; Standard Deviation =3.07
       - AdaBoost : Accuracy=96.27 %; Standard Deviation =3.09 %
       
- 5.   **Comparing the Models we computed a ROC metrics then did a plot**
+     5.   **Comparing the Models we computed a ROC metrics then did a plot**
 
- 6.   **Next we import sklearn sklearn.set_config(display="diagram") to create a pipeline for our models**
+     6.   **Next we import sklearn sklearn.set_config(display="diagram") to create a pipeline for our models**
 
    ## Finding the best parameters using Logistic Regression
       - from sklearn.model_selection import RandomizedSearchCV
@@ -122,8 +122,8 @@ to specify the matrix soft features and Target variable
      - the accuracy increased from 97.81% to 98.24% 
      - while the Standard Deviation also increased from 1.98% to 2.16%.
      
-  ## We then Predicted couple of single observations
+   ## We then Predicted couple of single observations
   
-  ## 
+   ## Finaly we Predicted  randomly generated observations
   
 
