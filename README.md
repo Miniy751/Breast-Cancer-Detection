@@ -125,5 +125,6 @@ to specify the matrix soft features and Target variable
    ## We then Predicted couple of single observations
   
    ## Finaly we Predicted  randomly generated observations
-  
+      * classifier_final.predict(scaling .transform(random_sample))
+      * array([0], dtype=uint8)
 
