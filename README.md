@@ -115,8 +115,9 @@ to specify the matrix soft features and Target variable
      - random_search = RandomizedSearchCV(estimator=classifier_lr, param_distributions=parameters, n_iter=5, 
                                    scoring='roc_auc', n_jobs = -1, cv=5, verbose=3)
      - random_search.fit(x_train, y_train)
-     - here we achieved the best_estimator, best_score and best params
+     - here we achieved the best_estimator, best_score and best params for our models..
      
-   ## Final model
+   ## Final model(Logistic Regression)
+     - Following the cross validation process, the accuracy increased from 97.81% to 98.24% while the Standard Deviation also increased from 1.98% to 2.16%.
   
 
