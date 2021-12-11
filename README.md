@@ -17,7 +17,9 @@ A project by Mini Yadav, Elena Dragomir and Belinda Achuo
 * Data was extracted from Kaggle.com, were the team agreed to go with the following Data sets:
 
 * https://www.kaggle.com/uciml/breast-cancer-wisconsin-data 
-
+*
+## Data storage
+ * postgresql to store the data
 
 ## Data Processing
 
