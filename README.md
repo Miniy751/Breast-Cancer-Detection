@@ -56,7 +56,7 @@ to specify the matrix soft features and Target variable
 
 ## Building the Models.
 
- 1. **Logistic Regression**:
+1. # Logistic Regression**:
 
   * From sklearn.linear_model import LogisticRegression
   * We then created the logistic regression class, specifying the Random State = 0.
@@ -74,7 +74,7 @@ to specify the matrix soft features and Target variable
      
    * Cross Validation: To evaluate our scores by cross-validation; This was to evaluate the performance of our models and compute 10 different accuracy  on the basis of               x_train and y_train. Which increased the accuracy to 97.81 %.  And standard deviation for all the 10 accuracies. 1.98%
 
-  2. **Random Forest Model**:
+  2. # Random Forest Model**:
       
     * from sklearn.ensemble import RandomForestClassifier
     * Specified the Classifier as  classifier_rm    then random_state = 0
@@ -92,7 +92,7 @@ to specify the matrix soft features and Target variable
       
      * Cross Validation of Random Forest: Accuracy is 96.05 %  And standard deviation for all the 10 accuracies. 3.07%.
     
-  3. **AdaBoost Model** 
+  3. # AdaBoost Model** 
 
 
 
