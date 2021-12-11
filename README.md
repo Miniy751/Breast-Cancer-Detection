@@ -125,6 +125,9 @@ to specify the matrix soft features and Target variable
    ## We then Predicted couple of single observations
   
    ## Finaly we Predicted  randomly generated observations
+      * from sklearn.preprocessing import LabelEncoder
+      * le = LabelEncoder()
+        le.fit_transform(dataset["diagnosis_M"])
       * classifier_final.predict(scaling .transform(random_sample))
       * array([0], dtype=uint8)
 
