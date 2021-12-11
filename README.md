@@ -58,23 +58,23 @@ to specify the matrix soft features and Target variable
 
  1. **Logistic Regression**:
 
-   * From sklearn.linear_model import LogisticRegression
-   * We then created the logistic regression class, specifying the Random State = 0.
-   * We then trained our Model using the classifier_lr.fit method(specifying the(x_train, y_train).
-   * We created a variable with all predicted values by using the .predict method (x_test) and stored in a y_pred
-   * Next We Analysed the performance of our  logistic regression model.
+  * From sklearn.linear_model import LogisticRegression
+  * We then created the logistic regression class, specifying the Random State = 0.
+  * We then trained our Model using the classifier_lr.fit method(specifying the(x_train, y_train).
+  * We created a variable with all predicted values by using the .predict method (x_test) and stored in a y_pred
+  * Next We Analysed the performance of our  logistic regression model.
 
-   * By Using the following Parameters.
+  * By Using the following Parameters.
    
-     - Accuracy  classification score:     To calculate   accuracy for our sampled model       
-     - F1 Score : interpreted as the weighted average  ( balanced score- 0 being   worse and 1 is better)
-     - Precision score: is the ratio tp/(tp+fp) true or false positive.best value is 1 and worse is 0
-     - Recall_Score: Calculates the ratio of   tp/(tp+fn), best value is 1 and worse is 0
-     - Confusion Matrix: to evaluate the accuracy of a classification
+    - Accuracy  classification score:     To calculate   accuracy for our sampled model       
+    - F1 Score : interpreted as the weighted average  ( balanced score- 0 being   worse and 1 is better)
+    - Precision score: is the ratio tp/(tp+fp) true or false positive.best value is 1 and worse is 0
+    - Recall_Score: Calculates the ratio of   tp/(tp+fn), best value is 1 and worse is 0
+    - Confusion Matrix: to evaluate the accuracy of a classification
      
    * Cross Validation: To evaluate our scores by cross-validation; This was to evaluate the performance of our models and compute 10 different accuracy  on the basis of               x_train and y_train. Which increased the accuracy to 97.81 %.  And standard deviation for all the 10 accuracies. 1.98%
 
- 2. **Random Forest Model**:
+  2. **Random Forest Model**:
       
     * from sklearn.ensemble import RandomForestClassifier
     * Specified the Classifier as  classifier_rm    then random_state = 0
@@ -92,21 +92,31 @@ to specify the matrix soft features and Target variable
       
      * Cross Validation of Random Forest: Accuracy is 96.05 %  And standard deviation for all the 10 accuracies. 3.07%.
     
- 3. **AdaBoost Model** 
+  3. **AdaBoost Model** 
 
 
 
- 4.  **Comparing classification reports**
+  4.  **Comparing classification reports**
       
       - Logistic Regression: Accuracy=97.81%; Standard Deviation =1.98%
       - Random Forest: Accuracy=96.05 %; Standard Deviation =3.07
       - AdaBoost : Accuracy=96.27 %; Standard Deviation =3.09 %
       
-5.   **Comparing the Models we computed a ROC metrics then did a plot**
+ 5.   **Comparing the Models we computed a ROC metrics then did a plot**
 
-6.   **
+ 6.   **Next we import sklearn sklearn.set_config(display="diagram") to create a pipeline for our models**
 
+   ## Finding the best parameters using Logistic Regression
+      - from sklearn.model_selection import RandomizedSearchCV
+      - parameters = {'penalty':['l1', 'l2', 'elasticnet', 'none'],
+              'C':[0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0],
+              'solver': ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga']
+              }
+     - random_search = RandomizedSearchCV(estimator=classifier_lr, param_distributions=parameters, n_iter=5, 
+                                   scoring='roc_auc', n_jobs = -1, cv=5, verbose=3)
+     - random_search.fit(x_train, y_train)
+     - here we achieved the best_estimator, best_score and best params
      
-    
+   ## Final model
   
 
